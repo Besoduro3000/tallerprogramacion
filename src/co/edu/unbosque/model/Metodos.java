@@ -50,5 +50,15 @@ public class Metodos {
 
 		return solucion;
 	}
+	public int Summary(){
+		int total = 0;
+		for(int i=0;i< csv.getCsvList().size();i++){
+			Registro aux= csv.getCsvList().get(i);
+			float quantity=Float.parseFloat(aux.getQuantity());
+			float unitPrice=Float.parseFloat(aux.getUnitPrice());
+			total= (int) (total+(quantity*unitPrice));
+		}
+		return total;
+	}
 
 }

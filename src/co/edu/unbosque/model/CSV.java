@@ -51,8 +51,10 @@ public class CSV {
 		return csvList;
 	}
 
+
 	public void setCsvList(List<Registro> csvList) {
 		this.csvList = csvList;
 	}
+
 
 }

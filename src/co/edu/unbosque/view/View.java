@@ -10,7 +10,7 @@ public class View {
 
     }
 
-    public String lectura(String invoiceNo) {
+    public String lectura() {
         String lectura = consola.nextLine();
         consola.nextLine();
         return lectura;
