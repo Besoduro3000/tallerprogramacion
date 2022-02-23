@@ -1,4 +1,4 @@
-package src.co.edu.unbosque.model;
+package co.edu.unbosque.model;
 
 public class Registro {
 
