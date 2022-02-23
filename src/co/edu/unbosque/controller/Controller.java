@@ -1,26 +1,37 @@
 package co.edu.unbosque.controller;
 
-import co.edu.unbosque.model.*;
+import co.edu.unbosque.model.CSV;
+import co.edu.unbosque.model.Metodos;
+
+
+
+
 
 public class Controller {
 
-	private final CSV csv;
-
-
+	private Metodos metodos; 
+	
     public Controller() {
-
-
-
-        csv = new CSV("CSV/data.csv");
-
-        for (var i : csv.getCsvList()) {
-            System.out.println(i.toString());
-        }
-
-
-
+        
+        metodos = new Metodos ();
+         //test
+         
+         
+         System.out.println(metodos.findByInvoiceNo("536365"));	
+                
+                
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+	
+	
     }
-	
-	
-
 }
