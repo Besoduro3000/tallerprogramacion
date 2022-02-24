@@ -14,7 +14,11 @@ public class Controller {
      */
     View view;
 
-	private Metodos metodos;
+    /**
+     *  clase metodo paquete model
+     */
+
+    private Metodos metodos;
 
     /**
      * Instantiates a new Controller.
@@ -31,8 +35,12 @@ public class Controller {
          System.out.println(metodos.findByInvoiceNo(factura));
         System.out.println("Total de ventas:\n"+"$"+metodos.Summary());
         System.out.println(metodos.countByStockCode("84029G"));
+        System.out.println(metodos.avgMonthlySales());
 
-        System.out.println(metodos.findPartiallyByDescription("SAVE THE PLANET MUG"));
+        String descripcion;
+        System.out.println("Ingrese el nombre de la descripcion: (TODO EN MAYUSCULA DOBLE ENTER)");
+        descripcion = view.lectura();
+        System.out.println(metodos.findPartiallyByDescription(descripcion));
 
 
 
